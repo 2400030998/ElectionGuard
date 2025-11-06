@@ -1,38 +1,151 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.main-content {
+  flex: 1;
+}
+
+/* Welcome Home Page Styles */
+.welcome-home-page {
+  text-align: center;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+
+.welcome-home-page h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.welcome-home-page p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+}
+
+.get-started-btn {
+  background: linear-gradient(45deg, #FF6B6B, #FF8E53);
+  color: white;
+  border: none;
+  padding: 20px 60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 40px;
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+  transition: all 0.3s ease;
+}
+
+.get-started-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
+}
+
+/* Dashboard Page Styles */
+.dashboard-page {
+  background: #f5f5f5;
+  flex: 1;
+}
+
+/* Login Page Styles */
+.login-page {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  flex: 1;
+}
+
+/* Profile Page Styles */
+.profile-page {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  flex: 1;
+}
+
+/* Welcome Page Styles */
+.welcome-page {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-home-page h1 {
+    font-size: 2.5rem;
+  }
+  
+  .welcome-home-page p {
+    font-size: 1.2rem;
+  }
+  
+  .get-started-btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-home-page h1 {
+    font-size: 2rem;
+  }
+  
+  .welcome-home-page p {
+    font-size: 1rem;
+  }
+  
+  .get-started-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
+/* Demo Button Styles */
+.demo-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.demo-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.citizen-demo {
+  background: #27ae60;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.citizen-demo:hover {
+  background: #219653;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.admin-demo {
+  background: #e74c3c;
+  color: white;
+}
+
+.admin-demo:hover {
+  background: #c0392b;
 }

@@ -1,0 +1,193 @@
+.login-container {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #1e3c72;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.login-form input:focus {
+  border-color: #1e3c72;
+  outline: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(45deg, #FF6B6B, #FF8E53);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.toggle-text {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+.toggle-link {
+  color: #1e3c72;
+  cursor: pointer;
+  font-weight: bold;
+}
+.role-section {
+  margin: 20px 0;
+}
+
+.role-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1e3c72;
+  font-size: 1.1rem;
+}
+
+.role-select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background-color: white;
+  font-weight: bold;
+}
+
+.role-select:focus {
+  border-color: #1e3c72;
+  outline: none;
+}
+
+.role-description {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 4px solid #1e3c72;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.role-fields {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+}
+
+.role-fields input,
+.role-fields select {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+.justification-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 60px;
+  max-height: 80px;
+}
+
+/* ADD THE DEMO BUTTON STYLES RIGHT HERE */
+.observer-demo {
+  background: #f39c12 !important;
+  color: white;
+}
+
+.observer-demo:hover {
+  background: #e67e22 !important;
+}
+
+.analyst-demo {
+  background: #9b59b6 !important;
+  color: white;
+}
+
+.analyst-demo:hover {
+  background: #8e44ad !important;
+}
+
+.citizen-demo {
+  background: #27ae60 !important;
+  color: white;
+}
+
+.citizen-demo:hover {
+  background: #219653 !important;
+}
+
+.admin-demo {
+  background: #e74c3c !important;
+  color: white;
+}
+
+.admin-demo:hover {
+  background: #c0392b !important;
+}
+
+.demo-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.demo-btn {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.demo-note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 20px;
+  font-style: italic;
+}

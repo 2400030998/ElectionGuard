@@ -1,0 +1,103 @@
+.footer {
+  background: #1e3c72;
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ALL SECTIONS SIDE BY SIDE */
+.footer-sections {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* LEFT: ElectionGuard */
+.footer-left {
+  text-align: left;
+}
+
+.footer-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-tagline {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+/* MIDDLE: Quick Links & Resources */
+.footer-middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* RIGHT: Connect With Us */
+.footer-right {
+  text-align: left;
+}
+
+.column-title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link-item {
+  color: #e0e0e0;
+  font-size: 1rem;
+  padding: 5px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.link-item:hover {
+  color: #4a90e2;
+}
+
+/* Copyright */
+.footer-bottom {
+  text-align: center;
+  color: #e0e0e0;
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #2a5298;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-sections {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .footer-middle {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer-left,
+  .footer-right {
+    text-align: center;
+  }
+}
